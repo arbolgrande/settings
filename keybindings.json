@@ -1,0 +1,165 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+      "key": "ctrl+[Quote]",
+      "command": "cursorWordEndRight",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+right",
+      "command": "-cursorWordEndRight",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+[Semicolon]",
+      "command": "cursorWordStartLeft",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+left",
+      "command": "-cursorWordStartLeft",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "enter",
+      "command": "-renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+      "key": "ctrl+q",
+      "command": "-workbench.action.quickOpenView"
+    },
+    {
+      "key": "ctrl+q",
+      "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+      "when": "inQuickOpen && inViewsPicker"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "workbench.action.openView"
+    },
+    {
+      "key": "ctrl+n",
+      "command": "search.focus.nextInputBox",
+      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+      "key": "cmd+down",
+      "command": "-search.focus.nextInputBox",
+      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+      "key": "ctrl+p",
+      "command": "search.focus.previousInputBox",
+      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+    },
+    {
+      "key": "cmd+up",
+      "command": "-search.focus.previousInputBox",
+      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+    },
+    {
+      "key": "ctrl+p",
+      "command": "search.action.focusSearchFromResults",
+      "when": "firstMatchFocus && searchViewletVisible"
+    },
+    {
+      "key": "cmd+up",
+      "command": "-search.action.focusSearchFromResults",
+      "when": "firstMatchFocus && searchViewletVisible"
+    },
+    {
+      "key": "shift+f4",
+      "command": "-search.action.focusPreviousSearchResult",
+      "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+      "key": "f4",
+      "command": "-search.action.focusNextSearchResult",
+      "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "-workbench.action.switchWindow"
+    },
+    {
+      "key": "ctrl+q n",
+      "command": "workbench.action.nextEditor"
+    },
+    {
+      "key": "alt+cmd+right",
+      "command": "-workbench.action.nextEditor"
+    },
+    {
+      "key": "ctrl+q p",
+      "command": "workbench.action.previousEditor"
+    },
+    {
+      "key": "alt+cmd+left",
+      "command": "-workbench.action.previousEditor"
+    },
+    {
+      "key": "ctrl+v",
+      "command": "cursorPageDown",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "pagedown",
+      "command": "-cursorPageDown",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+u",
+      "command": "cursorPageUp",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "pageup",
+      "command": "-cursorPageUp",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+enter",
+      "command": "-explorer.openToSide",
+      "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
+      "key": "ctrl+enter",
+      "command": "-search.action.openResultToSide",
+      "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+      "key": "cmd+enter",
+      "command": "-search.action.openInEditor",
+      "when": "hasSearchResult && searchViewletFocus"
+    },
+    {
+      "key": "ctrl+enter",
+      "command": "-openReferenceToSide",
+      "when": "listFocus && referenceSearchVisible && !inputFocus"
+    },
+    {
+      "key": "ctrl+enter",
+      "command": "-problems.action.openToSide",
+      "when": "problemFocus"
+    },
+    {
+      "key": "ctrl+enter",
+      "command": "-notebook.cell.execute",
+      "when": "notebookEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+      "key": "alt+cmd+enter",
+      "command": "-editor.action.replaceAll",
+      "when": "editorFocus && findWidgetVisible"
+    },
+    {
+      "key": "alt+cmd+enter",
+      "command": "-search.action.replaceAll",
+      "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+    },
+    {
+      "key": "alt+cmd+enter",
+      "command": "workbench.action.quickSwitchWindow"
+    }
+  ]
